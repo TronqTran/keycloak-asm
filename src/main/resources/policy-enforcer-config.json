@@ -1,0 +1,28 @@
+{
+  "realm": "asm-keycloak",
+  "auth-server-url": "http://localhost:8080",
+  "resource": "springboot-be",
+  "credentials":
+  {
+    "secret": "GBSrmGlSGCdvP862liPvhruvDFiy3soB"
+  },
+  "http-method-as-scope": true,
+  "paths": [
+    {
+      "path": "/restaurant/public/list",
+      "enforcement-mode": "DISABLED"
+    },
+    {
+      "path": "/restaurant/public/menu/*",
+      "enforcement-mode": "DISABLED"
+    },
+    {
+      "path": "/swagger-ui/*",
+      "enforcement-mode": "DISABLED"
+    },
+    {
+      "path": "/v3/api-docs/*",
+      "enforcement-mode": "DISABLED"
+    }
+  ]
+}
